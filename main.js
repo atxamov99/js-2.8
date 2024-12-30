@@ -1,4 +1,4 @@
-// Foydalanuvchining login va parolini tekshirish
+alert("login 'mars' password '2022'")
 const passwordEye = document.querySelector('#password');
 const submitButton = document.querySelector('#submit-btn');
 const emailInput = document.querySelector('#main_input-one');
