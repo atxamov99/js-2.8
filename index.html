@@ -35,24 +35,23 @@
                 <div class="right_info">Ota-onaman</div>
             </div>
             <div class="main_input">
-                <input type="email" id="main_input-one" placeholder="Modme id or Phone nuumber">
+                <input type="email" id="main_input-one" style="padding-left: 10px;" placeholder="Modme id or Phone number">
                 <div class="password-container">
                     <br>
                     <br>
-                    <input type="password" id="password" placeholder="Password" oninput="updateButtonState()">
-                    <span class="toggle-visibility" onmousedown="showPassword()" onmouseup="hidePassword()"
-                        onmouseleave="hidePassword()">
+                    <input type="password" id="password" placeholder="Password" onkeydown="checkEnter(event)" oninput="updateButtonState()">
+                    <span class="toggle-visibility" onmousedown="showPassword()" onmouseup="hidePassword()" onmouseleave="hidePassword()">
                         <img src="Eye.png" alt="">
                     </span>
                 </div>
-
-
+                <br>
+                <a href="two.html"><button class="submit-btn" id="submit-btn"  onclick="validateLogin()">Подтвердить</button></a>
+                <p id="error-message" style="color: red; display: none;">Noto'g'ri login yoki parol!</p>
             </div>
             <p>QR code orqali kirish</p>
-            <button class="submit-btn" id="submit-btn" disabled>Подтвердить</button>
         </div>
     </main>
-
+    
 </body>
 
 </html>
